@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgraud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCategorias">
+
+
+    <ImageView
+        android:id="@+id/IconPoste"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/posteletrico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="400dp"
+        />
+
+    <ImageView
+        android:id="@+id/IconManutenao1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/manutencao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="310dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/Conteiner_Categorias"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/conteinar_categorias"
+        app:layout_constraintTop_toBottomOf="@id/IconManutenao1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="70dp">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/Novo_Contrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:onClick="AbrirNovoContrato"
+                    app:cardBackgroundColor="@color/LaranjaEscuro"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="20dp"
+                        android:text="Pedido de Contrato"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/novocontrato" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Comprar_Energia"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/LaranjaEscuro"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"><TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comprar Credelec"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"/>
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/compra_credelec" />
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Reclamacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/LaranjaEscuro"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp">
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reclamação "
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"/>
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/reclamacao" />
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Falta_energia"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/LaranjaEscuro"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"><TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Falta de Energia"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"/>
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/falta_energia" />
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/PouparEnergia"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/LaranjaEscuro"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"><TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Poupe Energia"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp"/>
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/poupar_energia" />
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

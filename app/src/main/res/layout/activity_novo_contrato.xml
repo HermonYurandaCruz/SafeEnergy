@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Novo_Contrato">
+
+
+    <TextView
+        android:id="@+id/novoCadastro"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Novo Contrato"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Tv_nome"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:text="Nome:"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/novoCadastro"/>
+
+    <EditText
+        android:id="@+id/ET_nome"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/Tv_nome"
+
+        app:layout_constraintTop_toBottomOf="@id/novoCadastro"
+
+        tools:layout_editor_absoluteY="105dp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_dataNascimento"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:text="Data de Nascimento:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ET_nome"
+        />
+    <EditText
+        android:id="@+id/ET_dataNascimento"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@id/Tv_dataNascimento"
+        app:layout_constraintTop_toBottomOf="@id/ET_nome"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/Tv_nacionalidade"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Nacionalidade:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_dataNascimento"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        />
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/Tv_nacionalidade"
+        app:layout_constraintTop_toBottomOf="@id/ET_dataNascimento"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:text="Sexo:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/ET_nome"
+        app:layout_constraintTop_toBottomOf="@id/novoCadastro"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSexo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/sexo"
+        app:layout_constraintTop_toBottomOf="@id/novoCadastro"
+        tools:layout_editor_absoluteY="120dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_cell"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="cell:+258"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_nacionalidade"
+        />
+
+    <EditText
+        android:id="@+id/ET_cell"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/Tv_cell"
+        app:layout_constraintTop_toBottomOf="@id/Tv_nacionalidade"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_email"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="E-mail:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_cell"
+        />
+
+    <EditText
+        android:id="@+id/ET_email"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@id/Tv_email"
+        app:layout_constraintTop_toBottomOf="@id/Tv_cell"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/DadosCasa"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Localizacao da Casa"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ET_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_Provincia"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Provincia"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DadosCasa"
+        />
+    <EditText
+        android:id="@+id/ET_Provincia"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/Tv_Provincia"
+        app:layout_constraintTop_toBottomOf="@id/DadosCasa"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_Destrito"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Destrito"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ET_Provincia"
+        />
+    <EditText
+        android:id="@+id/ET_Destrito"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/Tv_Destrito"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Provincia"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_Bairro"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Bairro:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Destrito"
+        />
+    <EditText
+        android:id="@+id/ET_Bairro"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/Tv_Bairro"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Destrito"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/Tv_nCasa"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="N casa:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Bairro"
+        />
+    <EditText
+        android:id="@+id/ET_nCasa"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/Tv_nCasa"
+        app:layout_constraintTop_toBottomOf="@id/Tv_Bairro"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Aceitar"
+        style="@style/Botao2"
+        android:layout_marginBottom="60dp"
+        android:text="Confirmar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ET_nCasa"
+        android:layout_marginTop="30dp"
+       />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

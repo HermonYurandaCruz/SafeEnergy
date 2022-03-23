@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraud"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/IconPoste"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/posteletrico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="120dp"
+        />
+
+    <ImageView
+        android:id="@+id/IconManutenao1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/manutencao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginTop="152dp"
+
+        />
+
+    <TextView
+        android:id="@+id/NomeApk"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Safe Energy"
+        android:textColor="@color/black"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="410dp"
+        android:layout_marginBottom="200dp"
+        />
+
+    <ProgressBar
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomeApk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="110dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

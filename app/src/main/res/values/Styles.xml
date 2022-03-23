@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ConteinerLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+
+    </style>
+    <style name="ConteinerNovoCadastro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+
+    </style>
+
+
+<style name="TextoLogin">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/textologin</item>
+    <item name="android:padding">20dp</item>
+    <item name="android:maxLength">25</item>
+    <item name="android:layout_marginRight">40dp</item>
+    <item name="android:layout_marginLeft">40dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_marginBottom">20dp</item>
+</style>
+
+    <style name="Botao">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/botao</item>
+
+
+    </style>
+
+    <style name="Botao2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/botao</item>
+
+
+    </style>
+
+
+
+</resources>
