@@ -8,13 +8,17 @@
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/botao.xml" value="0.174" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/conteinar_categorias.xml" value="0.174" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/conteiner_login.xml" value="0.174" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/drawable/conteinerbasico.xml" value="0.1375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/ic_adicionar.xml" value="0.174" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/textologin.xml" value="0.174" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_comprar_credelec.xml" value="0.209375" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_falta_de_energia.xml" value="0.209375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_main.xml" value="0.2078804347826087" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_novo_cadastro.xml" value="0.25" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_novo_contrato.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_categorias.xml" value="0.18" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_inicio.xml" value="0.25" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_reclamacao.xml" value="0.33" />
       </map>
     </option>
   </component>

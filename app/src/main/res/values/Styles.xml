@@ -12,6 +12,12 @@
         <item name="android:background">@drawable/conteiner_login</item>
 
     </style>
+    <style name="ConteinerBasico">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/conteinerbasico</item>
+
+    </style>
 
 
 <style name="TextoLogin">

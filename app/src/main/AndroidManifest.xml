@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SafeEnergy">
         <activity
+            android:name=".ComprarCredelec"
+            android:exported="false" />
+        <activity
+            android:name=".FaltaDeEnergia"
+            android:exported="false" />
+        <activity
+            android:name=".TelaReclamacao"
+            android:exported="false" />
+        <activity
             android:name=".Novo_Contrato"
             android:exported="false" />
         <activity

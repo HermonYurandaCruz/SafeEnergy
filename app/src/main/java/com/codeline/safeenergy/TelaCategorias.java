@@ -20,4 +20,22 @@ public class TelaCategorias extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void AbrirTelaComprarCredelec(View view){
+        Intent intent=new Intent(TelaCategorias.this,ComprarCredelec.class);
+        startActivity(intent);
+
+    }
+
+
+    public void AbrirTelaReclamacao(View view){
+        Intent intent=new Intent(TelaCategorias.this,TelaReclamacao.class);
+        startActivity(intent);
+
+    }
+
+    public void AbrirTelaFaltaDeEnergia(View view){
+        Intent intent=new Intent(TelaCategorias.this,FaltaDeEnergia.class);
+        startActivity(intent);
+
+    }
 }

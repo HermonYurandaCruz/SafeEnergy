@@ -95,15 +95,18 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/LaranjaEscuro"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="0dp"><TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Comprar Credelec"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:paddingHorizontal="20dp"/>
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="AbrirTelaComprarCredelec"
+                        android:paddingHorizontal="20dp"
+                        android:text="Comprar Credelec"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                     <ImageView
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
@@ -122,15 +125,17 @@
                     app:cardBackgroundColor="@color/LaranjaEscuro"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="0dp">
+
                     <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Reclamação "
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:paddingHorizontal="20dp"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="AbrirTelaReclamacao"
+                        android:paddingHorizontal="20dp"
+                        android:text="Reclamação "
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                     <ImageView
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
@@ -149,15 +154,18 @@
                     android:layout_height="120dp"
                     app:cardBackgroundColor="@color/LaranjaEscuro"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="0dp"><TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Falta de Energia"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:layout_gravity="center"
-                    android:textStyle="bold"
-                    android:paddingHorizontal="20dp"/>
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:onClick="AbrirTelaFaltaDeEnergia"
+                        android:paddingHorizontal="20dp"
+                        android:text="Falta de Energia"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
                     <ImageView
                         android:layout_width="110dp"
                         android:layout_height="match_parent"
