@@ -38,6 +38,19 @@
         app:layout_constraintEnd_toEndOf="@id/View_Pagamento"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:text="trocar"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/View_Pagamento"
+        app:layout_constraintTop_toTopOf="@id/View_Pagamento"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="40dp"
+        />
+
+
     <EditText
         android:id="@+id/ET_numeroContadorCredelec"
         android:layout_width="150dp"
@@ -62,20 +75,24 @@
     <TextView
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Total de KWt:"
+        android:text="Total de Energia:"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/View_Pagamento"
         android:layout_marginTop="25dp"
-
         />
+
+
+
     <TextView
         android:id="@+id/Tv_valorEmKw"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:text="100 kw:"
+        android:text="100 kwh"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="25sp"
         android:gravity="center"
@@ -92,11 +109,121 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Tv_valorEmKw"
+        app:layout_constraintBottom_toTopOf="@id/View_ListaInformacoes"
         style="@style/Botao"
         android:text="Pagar Fatura"
+        android:textColor="@color/white"
 
         />
-    
+    <View
+        android:id="@+id/View_ListaInformacoes"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        style="@style/ConteinerMetade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/Tv_RecargaCredelec"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/View_ListaInformacoes"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Recarga:"
+        android:textSize="16sp"
+        android:textColor="@color/LaranjaEscuro"
+        />
+    <TextView
+        android:id="@+id/Tv_ContadorCredelec"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_RecargaCredelec"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="Contador:"
+        android:textSize="16sp"
+        android:textColor="@color/LaranjaEscuro"
+        />
+    <TextView
+        android:id="@+id/Tv_ValDeEnergia"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_ContadorCredelec"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="Val de Energia:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/Tv_DividaPaga"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_ValDeEnergia"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="Divida Paga:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/Tv_DividaAPagar"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_DividaPaga"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="Divida a Pagar:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/Tv_TaxaRadio"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/Tv_ContadorCredelec"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Taxa de Radio:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/Tv_TaxaLixo"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_TaxaRadio"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Taxa de Lixo:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/Tv_Referencia"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Tv_TaxaLixo"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:text="Referencia:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+
 
 
 

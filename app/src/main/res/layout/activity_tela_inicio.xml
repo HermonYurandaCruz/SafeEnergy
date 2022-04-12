@@ -96,7 +96,7 @@
         android:onClick="AbrirTelaCategoria"
         android:text="@string/novo_cadastro"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

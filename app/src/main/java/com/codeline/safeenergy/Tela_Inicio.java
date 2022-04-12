@@ -20,6 +20,7 @@ public class Tela_Inicio extends AppCompatActivity {
 
         IniciarNovoCadastro();
 
+
         tv_novoCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

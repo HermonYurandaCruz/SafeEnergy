@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraud"
+    tools:context=".MeuPerfil">
+
+    <View
+        android:id="@+id/View_Perfil"
+        style="@style/PerfilBox"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/Iv_perfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="@id/View_Perfil"
+        app:layout_constraintEnd_toEndOf="@id/View_Perfil"
+        android:src="@drawable/meuperfil"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/Tv_NomePerfil"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Nome:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View_Perfil"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/NomePerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_perfil2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View_Perfil"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Data de Nascimento"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/NomePerfil"
+        />
+
+    <ImageView
+        android:id="@+id/DataNascimentoPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_calendario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NomePerfil"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Tv_MoradaPerfil"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Morada"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/DataNascimentoPerfil"
+        />
+
+    <ImageView
+        android:id="@+id/IV_MoradaPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_mapa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DataNascimentoPerfil"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Tv_NumeroContadorPerfil"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Numero de Contador"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/IV_MoradaPerfil"
+        />
+
+    <ImageView
+        android:id="@+id/IV_NumeroContadorPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_contador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV_MoradaPerfil"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Tv_NumeroDecelularPerfil"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Cell"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/IV_NumeroContadorPerfil"
+        />
+
+    <ImageView
+        android:id="@+id/IV_NumeroDecelularPerfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_cell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV_NumeroContadorPerfil"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
