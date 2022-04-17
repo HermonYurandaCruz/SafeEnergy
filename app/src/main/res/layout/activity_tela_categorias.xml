@@ -203,7 +203,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:onClick="AbrirPdf"
+                        android:onClick="AbrirVideo"
                         android:paddingHorizontal="20dp"
                         android:text="Poupe Energia"
                         android:textColor="@color/white"

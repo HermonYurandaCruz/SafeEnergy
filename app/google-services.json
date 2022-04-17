@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "110803099554",
+    "project_id": "safe-energy-9e06f",
+    "storage_bucket": "safe-energy-9e06f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110803099554:android:0ac77167b32a63cbbc5cfb",
+        "android_client_info": {
+          "package_name": "com.codeline.safeenergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110803099554-qj863cqdgoe2fa2chknofc3gvqqm3vo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT8o0CvTw20gxP3qTubDz5xgz-7pOW8YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110803099554-qj863cqdgoe2fa2chknofc3gvqqm3vo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -39,6 +39,14 @@
         app:layout_constraintTop_toBottomOf="@id/View_Perfil"
         android:layout_marginStart="80dp"
         android:layout_marginTop="40dp"/>
+    <View
+        android:id="@+id/View_Nome"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/NomePerfil"
+        app:layout_constraintTop_toBottomOf="@id/View_Perfil"
+        android:layout_marginTop="69dp"/>
+
 
     <ImageView
         android:id="@+id/NomePerfil"

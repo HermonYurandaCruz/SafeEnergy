@@ -55,8 +55,8 @@ public class TelaCategorias extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void AbrirPdf(View view){
-        Intent intent=new Intent(TelaCategorias.this,AbrirPDF.class);
+    public void AbrirVideo(View view){
+        Intent intent=new Intent(TelaCategorias.this,Video.class);
         startActivity(intent);
 
     }

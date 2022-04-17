@@ -7,38 +7,23 @@
     android:layout_height="match_parent"
     tools:context=".NovoCadastro">
 
-<TextView
-    android:id="@+id/Novo_cadastro"
-    android:layout_width="200dp"
-    android:layout_height="50dp"
-    android:text="Novo Cadastro"
-    android:textSize="25dp"
-    android:textStyle="bold"
-    android:textColor="@color/black"
-    android:textAlignment="center"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toTopOf="@+id/Nome"
-    app:layout_constraintTop_toTopOf="parent"
-    android:layout_marginTop="25dp"
-    />
-
     <EditText
         android:id="@+id/Nome"
         style="@style/TextoLogin"
         android:drawableRight="@drawable/ic_conta"
         android:hint="Nome: "
         android:inputType="text"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/DataNascimento"
-        app:layout_constraintTop_toBottomOf="@id/Novo_cadastro"
-        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
 
         />
+
     <EditText
         android:id="@+id/DataNascimento"
         style="@style/TextoLogin"
@@ -98,7 +83,7 @@
         />
 
     <EditText
-        android:id="@+id/NovaSenha"
+        android:id="@+id/Password"
         style="@style/TextoLogin"
         app:layout_constraintTop_toBottomOf="@id/NovoEmail"
         android:hint="Senha"
@@ -121,7 +106,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/NovaSenha" />
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        app:layout_constraintVertical_bias="0.145" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
