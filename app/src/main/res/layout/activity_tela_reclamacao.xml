@@ -7,35 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".TelaReclamacao">
 
-    <TextView
-        android:id="@+id/TV_Reclamacao"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        android:text="Reclamação"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        />
+
 
     <View
         android:id="@+id/V_Box"
-        android:layout_width="350dp"
-        android:layout_height="550dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
         style="@style/ConteinerNovoCadastro"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="90dp"
         />
 
     <EditText
-        android:id="@+id/Et_numeroCelularReclamacao"
+        android:id="@+id/et_numeroCelularReclamacao"
         android:layout_width="200dp"
         android:layout_height="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,17 +29,6 @@
         android:layout_marginTop="20dp"
         android:inputType="number"
         android:hint="Numero de Celular"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/Et_localDaReclamacao"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Et_numeroCelularReclamacao"
-        android:layout_marginTop="20dp"
-        android:inputType="textLongMessage"
-        android:hint="Localizacao"
         android:gravity="center"/>
 
     <EditText
@@ -69,15 +43,17 @@
         android:gravity="center"
         android:textSize="20sp"
         />
-<androidx.appcompat.widget.AppCompatButton
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Botao2"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        style="@style/Botao2"
-        app:layout_constraintTop_toBottomOf="@id/Et_localDaReclamacao"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:text="Enviar"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="510dp"
+        app:layout_constraintTop_toBottomOf="@id/et_numeroCelularReclamacao"/>
 
 
 

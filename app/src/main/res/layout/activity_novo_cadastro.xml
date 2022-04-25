@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/Nome"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         android:drawableRight="@drawable/ic_conta"
         android:hint="Nome: "
         android:inputType="text"
@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/DataNascimento"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         app:layout_constraintTop_toBottomOf="@id/Nome"
         android:hint="Data de Nacimento"
         android:textSize="20sp"
@@ -40,7 +40,7 @@
 
     <EditText
         android:id="@+id/Morada"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         app:layout_constraintTop_toBottomOf="@id/DataNascimento"
         android:hint="Morada"
         android:textSize="20sp"
@@ -55,7 +55,7 @@
 
     <EditText
         android:id="@+id/Contacto"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         app:layout_constraintTop_toBottomOf="@id/Morada"
         android:hint="Contacto"
         android:textSize="20sp"
@@ -70,7 +70,7 @@
 
     <EditText
         android:id="@+id/NovoEmail"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         app:layout_constraintTop_toBottomOf="@id/Contacto"
         android:hint="Email"
         android:textSize="20sp"
@@ -84,7 +84,7 @@
 
     <EditText
         android:id="@+id/Password"
-        style="@style/TextoLogin"
+        style="@style/TextBox"
         app:layout_constraintTop_toBottomOf="@id/NovoEmail"
         android:hint="Senha"
         android:textSize="20sp"
@@ -99,15 +99,15 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Confirmar"
         style="@style/Botao"
-        android:layout_marginBottom="35dp"
         android:onClick="AbrirTelaCategoria2"
         android:text="Confirmar"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Password"
-        app:layout_constraintVertical_bias="0.145" />
+        android:layout_marginTop="10dp"
+
+       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
