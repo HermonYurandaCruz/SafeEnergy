@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class TelaCategorias extends AppCompatActivity {
     TextView tv_PouparEnergia;
     ImageView imagemView;
-    String url = "https://drive.google.com/file/d/1S5eDm9VxgheC2EIkfU91SOj2JU-Ka8rr/view";
+    String url = "https://drive.google.com/file/d/1z4_MKyIFwE7TYakC5m56mMUrAd0imjG-/view?usp=sharing";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
