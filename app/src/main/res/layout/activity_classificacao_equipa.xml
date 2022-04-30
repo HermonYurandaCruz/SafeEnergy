@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraud"
+    tools:context=".ClassificacaoEquipa">
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:layout_centerInParent="true"
+       app:cardCornerRadius="12dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:padding="20dp">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:text="Classifique a nossa equipe"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+         <RatingBar
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:id="@+id/rb_avaliacao"
+            android:stepSize="0.5"
+            android:numStars="5"
+            android:layout_marginTop="20dp"/>
+
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+             android:layout_marginBottom="30dp"
+             android:hint="Deixe ficar o seu comentario"/>
+
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="codigo da equipe"/>
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:layout_width="150dp"
+             android:layout_height="45dp"
+            style="@style/Botao"
+             android:text="Enviar"
+             android:textColor="@color/white"/>
+
+
+
+      </LinearLayout>
+
+
+   </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

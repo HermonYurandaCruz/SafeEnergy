@@ -10,7 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SafeEnergy">
+        android:theme="@style/Theme.SafeEnergy" >
+        <activity
+            android:name=".PoupeEnergia"
+            android:exported="false" />
+        <activity
+            android:name=".ClassificacaoEquipa"
+            android:exported="false" />
         <activity
             android:name=".Video"
             android:exported="false" />

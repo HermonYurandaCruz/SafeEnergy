@@ -44,6 +44,8 @@ public class Tela_Inicio extends AppCompatActivity {
             }
         });
 
+
+        // DAR ACCAO A BOTAO LOGIN
       bt_login.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
@@ -101,7 +103,7 @@ public class Tela_Inicio extends AppCompatActivity {
 
 
     }
-
+// ACCAO PARA O APP NAO PEDIR O LOGIN CASO O USURIO JA TENHA FEITO O LOGIN NO DISPOSITIVO
     @Override
     protected void onStart() {
         super.onStart();
@@ -116,6 +118,7 @@ public class Tela_Inicio extends AppCompatActivity {
         Intent intent=new Intent(Tela_Inicio.this,TelaCategorias.class);
         startActivity(intent);
         finish();
+
     }
 
 
@@ -126,6 +129,13 @@ public class Tela_Inicio extends AppCompatActivity {
         et_passWord=findViewById(R.id.PasswordLogin);
         bt_login=findViewById(R.id.BotaoLogin);
         progressBar=findViewById(R.id.progresse);
+    }
+
+    private void AbrirTelaNovoCadastro(){
+        Intent intent=new Intent(Tela_Inicio.this,NovoCadastro.class);
+        startActivity(intent);
+        finish();
+
     }
 
 

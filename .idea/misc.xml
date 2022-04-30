@@ -15,7 +15,9 @@
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/ic_cell.xml" value="0.1375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/textologin.xml" value="0.174" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_abrir_pdf.xml" value="0.1" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_classificacao_equipa.xml" value="0.209375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_comprar_credelec.xml" value="0.25" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_denuncia_anonima.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_falta_de_energia.xml" value="0.209375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_main.xml" value="0.2078804347826087" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_meu_perfil.xml" value="0.25" />
@@ -26,6 +28,9 @@
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_inicio.xml" value="0.14285714285714285" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_reclamacao.xml" value="0.25" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_video.xml" value="0.1" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/fragment_second.xml" value="0.209375" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/item_main.xml" value="0.20885416666666667" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/reacoes.xml" value="0.12907608695652173" />
       </map>
     </option>
   </component>

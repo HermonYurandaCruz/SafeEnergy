@@ -169,7 +169,7 @@ bt_confirmar.setOnClickListener(new View.OnClickListener() {
         et_contacto = findViewById(R.id.Contacto);
         bt_confirmar = findViewById(R.id.Confirmar);
     }
-  
+
 
 
 
@@ -177,6 +177,8 @@ bt_confirmar.setOnClickListener(new View.OnClickListener() {
     public void AbrirTelaCategoria2(View v) {
         Intent tela = new Intent(NovoCadastro.this, TelaCategorias.class);
         startActivity(tela);
+        finish();
+       // despose();
 
 
     }

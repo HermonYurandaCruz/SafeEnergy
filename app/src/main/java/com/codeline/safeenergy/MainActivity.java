@@ -21,9 +21,13 @@ Timer timer;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this,Tela_Inicio.class);
+             Intent intent=new Intent(MainActivity.this,Tela_Inicio.class);
                 startActivity(intent);
                 finish();
+
+
+
+
 
 
             }
