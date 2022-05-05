@@ -9,42 +9,55 @@
 
 
 
+
+
     <View
         android:id="@+id/V_Box"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="0dp"
         style="@style/ConteinerNovoCadastro"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="90dp"
+
         />
 
-    <EditText
-        android:id="@+id/et_numeroCelularReclamacao"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Et_textoDaReclamacao"
-        android:layout_marginTop="20dp"
-        android:inputType="number"
-        android:hint="Numero de Celular"
-        android:gravity="center"/>
 
     <EditText
+        android:id="@+id/et_LocalizacaoActual"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Localização"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Et_textoDaReclamacao" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        style="@style/TextBox"
         android:id="@+id/Et_textoDaReclamacao"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/V_Box"
-        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/swt_anonimo"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+
+
         android:hint="Qual é a sua reclamação???"
         android:gravity="center"
         android:textSize="20sp"
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botaoReclamacao"
         style="@style/Botao2"
         android:layout_width="150dp"
         android:layout_height="40dp"
@@ -53,10 +66,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="510dp"
-        app:layout_constraintTop_toBottomOf="@id/et_numeroCelularReclamacao"/>
+        app:layout_constraintTop_toBottomOf="@id/et_LocalizacaoActual"
+        app:layout_constraintBottom_toBottomOf="@id/V_Box"
+        />
+
+    <Switch
+        android:id="@+id/swt_anonimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/V_Box"
+        app:layout_constraintTop_toTopOf="@id/V_Box"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="25dp"
+        />
 
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Anonimo"
+        app:layout_constraintEnd_toEndOf="@id/V_Box"
+        app:layout_constraintTop_toTopOf="@id/V_Box"
+        app:layout_constraintEnd_toStartOf="@id/swt_anonimo"
+        android:layout_marginTop="26dp"
+        />
 
 
 

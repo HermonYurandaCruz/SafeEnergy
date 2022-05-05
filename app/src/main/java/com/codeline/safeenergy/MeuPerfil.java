@@ -26,6 +26,57 @@ private TextView tv_terminarSessao;
 FirebaseFirestore bancoDeDados=FirebaseFirestore.getInstance();
 String usuarioId;
 
+    public MeuPerfil(TextView tv_email, TextView tv_numeroDecelular, TextView tv_nome, TextView tv_numeroDeContador, TextView tv_morada) {
+        this.tv_email = tv_email;
+        this.tv_numeroDecelular = tv_numeroDecelular;
+        this.tv_nome = tv_nome;
+        this.tv_numeroDeContador = tv_numeroDeContador;
+        this.tv_morada = tv_morada;
+    }
+
+    public MeuPerfil() {
+
+    }
+
+    public TextView getTv_email() {
+        return tv_email;
+    }
+
+    public void setTv_email(TextView tv_email) {
+        this.tv_email = tv_email;
+    }
+
+    public TextView getTv_numeroDecelular() {
+        return tv_numeroDecelular;
+    }
+
+    public void setTv_numeroDecelular(TextView tv_numeroDecelular) {
+        this.tv_numeroDecelular = tv_numeroDecelular;
+    }
+
+    public TextView getTv_nome() {
+        return tv_nome;
+    }
+
+    public void setTv_nome(TextView tv_nome) {
+        this.tv_nome = tv_nome;
+    }
+
+    public TextView getTv_numeroDeContador() {
+        return tv_numeroDeContador;
+    }
+
+    public void setTv_numeroDeContador(TextView tv_numeroDeContador) {
+        this.tv_numeroDeContador = tv_numeroDeContador;
+    }
+
+    public TextView getTv_morada() {
+        return tv_morada;
+    }
+
+    public void setTv_morada(TextView tv_morada) {
+        this.tv_morada = tv_morada;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

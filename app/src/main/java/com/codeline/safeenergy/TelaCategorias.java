@@ -67,8 +67,8 @@ public class TelaCategorias extends AppCompatActivity {
 
     }
 
-    public void AbrirTelaFaltaDeEnergia(View view){
-        Intent intent=new Intent(TelaCategorias.this,FaltaDeEnergia.class);
+    public void AbrirTelaReclamacao(View view){
+        Intent intent=new Intent(TelaCategorias.this,TelaReclamacao.class);
         startActivity(intent);
 
     }

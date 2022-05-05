@@ -131,12 +131,4 @@ public class Tela_Inicio extends AppCompatActivity {
         progressBar=findViewById(R.id.progresse);
     }
 
-    private void AbrirTelaNovoCadastro(){
-        Intent intent=new Intent(Tela_Inicio.this,NovoCadastro.class);
-        startActivity(intent);
-        finish();
-
-    }
-
-
 }

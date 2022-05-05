@@ -15,16 +15,16 @@
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/ic_cell.xml" value="0.1375" />
         <entry key="..\:/SafeEnergy/app/src/main/res/drawable/textologin.xml" value="0.174" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_abrir_pdf.xml" value="0.1" />
-        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_classificacao_equipa.xml" value="0.209375" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_classificacao_equipa.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_comprar_credelec.xml" value="0.25" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_denuncia_anonima.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_falta_de_energia.xml" value="0.209375" />
-        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_main.xml" value="0.2078804347826087" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_meu_perfil.xml" value="0.25" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_novo_cadastro.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_novo_contrato.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_poupe_energia.xml" value="0.209375" />
-        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_categorias.xml" value="0.1947463768115942" />
+        <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_categorias.xml" value="0.33" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_inicio.xml" value="0.14285714285714285" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_tela_reclamacao.xml" value="0.25" />
         <entry key="..\:/SafeEnergy/app/src/main/res/layout/activity_video.xml" value="0.1" />
@@ -39,5 +39,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>
