@@ -53,7 +53,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:drawableRight="@drawable/ic_key"
         app:layout_constraintStart_toStartOf="@id/Conteiner"
         app:layout_constraintEnd_toEndOf="@id/Conteiner"
@@ -74,22 +74,32 @@
 
     <TextView
         android:id="@+id/Novo_cadastro"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="80dp"
         android:text="@string/novo_cadastro"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Conteiner" />
+    <TextView
+        android:id="@+id/Tv_recuperarSenha"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:text="Recuperar senha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/BotaoLogin"
+        android:layout_marginTop="10dp"/>
 
     <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
         android:src="@drawable/ic_adicionar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Conteiner"
@@ -99,10 +109,10 @@
         android:layout_marginBottom="120dp"
         />
     <ProgressBar
-        android:layout_width="40dp"
+        android:layout_width="35dp"
 
         android:id="@+id/progresse"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="invisible"

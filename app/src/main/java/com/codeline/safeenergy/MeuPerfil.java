@@ -26,7 +26,7 @@ private TextView tv_terminarSessao;
 FirebaseFirestore bancoDeDados=FirebaseFirestore.getInstance();
 String usuarioId;
 
-    public MeuPerfil(TextView tv_email, TextView tv_numeroDecelular, TextView tv_nome, TextView tv_numeroDeContador, TextView tv_morada) {
+    public MeuPerfil(TextView tv_email,TextView tv_numeroDecelular,TextView tv_nome,TextView tv_numeroDeContador,TextView tv_morada) {
         this.tv_email = tv_email;
         this.tv_numeroDecelular = tv_numeroDecelular;
         this.tv_nome = tv_nome;
@@ -37,6 +37,7 @@ String usuarioId;
     public MeuPerfil() {
 
     }
+
 
     public TextView getTv_email() {
         return tv_email;
@@ -98,7 +99,7 @@ String usuarioId;
 
 
     }
-//recuperar os dados do banco de dados
+//dados do perfil usando base de dados
     @Override
     protected void onStart() {
         super.onStart();

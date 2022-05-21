@@ -47,18 +47,17 @@ public class TelaCategorias extends AppCompatActivity {
         tv_PouparEnergia=findViewById(R.id.tv_PouparEnergia);
     }
 
-
     public void AbrirNovoContrato(View view){
-        Intent intent=new Intent(TelaCategorias.this,Novo_Contrato.class);
+        Intent intent=new Intent(TelaCategorias.this,NovoContratoCliente.class);
         startActivity(intent);
 
     }
+
     public void AbrirTelaComprarCredelec(View view){
         Intent intent=new Intent(TelaCategorias.this,ComprarCredelec.class);
         startActivity(intent);
 
     }
-
 
     public void AbrirTelaClassificaoEqu(View view){
         Intent intent=new Intent(TelaCategorias.this,ClassificacaoEquipa.class);

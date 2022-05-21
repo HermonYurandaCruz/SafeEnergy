@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraud"
+    tools:context=".RecuperarSenha">
+
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:id="@+id/logo_recuperarsenha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_recuperarsenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/texto1"/>
+
+    <View
+        android:id="@+id/Conteiner"
+        style="@style/ConteinerRecurarSenha"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto2"
+        />
+    <EditText
+        android:id="@+id/emailLogin"
+        style="@style/TextoLogin"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/Conteiner"
+        app:layout_constraintEnd_toEndOf="@id/Conteiner"
+        app:layout_constraintTop_toTopOf="@id/Conteiner"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BotaoLogin"
+        style="@style/Botao"
+        android:layout_marginBottom="35dp"
+        android:text="Recuperar senha"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/emailLogin"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/Conteiner"
+        app:layout_constraintBottom_toBottomOf="@id/Conteiner"
+        app:layout_constraintStart_toStartOf="@id/Conteiner"
+        />
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:text="Digite o seu e-mail para receber o link"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_recuperarsenha"
+        />
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="250dp"
+        android:layout_height="22dp"
+        android:text="de recuperação da sua senha."
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto1"
+        app:layout_constraintBottom_toTopOf="@id/Conteiner"
+
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

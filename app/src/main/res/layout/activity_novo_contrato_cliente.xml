@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".NovoContratoCliente">
+
+
+        <TextView
+            android:id="@+id/novoCadastro"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Pedido de Contrato"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/NomeContrato"
+            style="@style/TextBox"
+            android:drawableRight="@drawable/ic_conta"
+            android:hint="Nome: "
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="75dp"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/et_DataNascimentoContrato"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/NomeContrato"
+            android:hint="Data de Nacimento"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="date"
+            android:drawableRight="@drawable/ic_calendario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/DitritoContrato"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/et_DataNascimentoContrato"
+            android:hint="Distrito"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:drawableRight="@drawable/ic_mapa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/et_contactoContrato"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/DitritoContrato"
+            android:hint="Contacto"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:drawableRight="@drawable/ic_contacto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/ed_emailContrato"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/et_contactoContrato"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/et_nacionalidade"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/ed_emailContrato"
+            android:hint="Nacionalidade"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="numberPassword"
+            android:drawableRight="@drawable/ic_mapa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/et_localizacaoCasa"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/et_nacionalidade"
+            android:hint="Localização da casa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="numberPassword"
+            android:drawableRight="@drawable/ic_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <EditText
+            android:id="@+id/et_numeroCasa"
+            style="@style/TextBox"
+            app:layout_constraintTop_toBottomOf="@id/et_localizacaoCasa"
+            android:hint="Numero da casa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:drawableRight="@drawable/ic_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Confirmar"
+            style="@style/Botao"
+            android:text="Confirmar"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_numeroCasa"
+            android:layout_marginTop="10dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintTop_toBottomOf="@id/Confirmar"/>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

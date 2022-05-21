@@ -150,6 +150,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/Reclamação"
                     android:layout_width="match_parent"
+                    android:onClick="AbrirTelaReclamacao"
                     android:layout_height="100dp"
                     app:cardBackgroundColor="@color/LaranjaEscuro"
                     app:cardCornerRadius="20dp"
@@ -159,7 +160,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:onClick="AbrirTelaReclamacao"
+
                         android:paddingHorizontal="20dp"
                         android:text="Reclamação"
                         android:textColor="@color/white"

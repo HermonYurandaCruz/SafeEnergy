@@ -2,10 +2,15 @@
 <resources>
     <style name="ConteinerLogin">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_height">260dp</item>
         <item name="android:background">@drawable/conteiner_login</item>
-
     </style>
+    <style name="ConteinerRecurarSenha">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:background">@drawable/conteiner_login</item>
+    </style>
+
     <style name="ConteinerNovoCadastro">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -63,6 +68,15 @@
         <item name="android:layout_marginBottom">20dp</item>
     </style>
 
+    <style name="BoxPopUp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/textologin</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:maxLength">25</item>
+
+    </style>
+
 
 
 
@@ -87,7 +101,13 @@
 
 
     </style>
+        <style name="Theme.SafeEnergy.CustomTheme">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowCloseOnTouchOutside">true</item>
+        </style>
 
+    <style name="AppTheme"></style>
 
 
 </resources>

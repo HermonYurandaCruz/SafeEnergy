@@ -3,11 +3,13 @@ package com.codeline.safeenergy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,7 +26,10 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -40,7 +45,8 @@ public class NovoCadastro extends AppCompatActivity {
     private androidx.appcompat.widget.AppCompatButton bt_confirmar;
     String[] mensagem={"Preencha todos os campos!!!","Cadastro realizado com Sucesso!!!"};
     String usuarioId;
-    Timer timer;
+    final Calendar meuCalendario=Calendar.getInstance();
+
 
 
     @Override
@@ -49,6 +55,22 @@ public class NovoCadastro extends AppCompatActivity {
         setContentView(R.layout.activity_novo_cadastro);
         getSupportActionBar().hide();
         IniciarComponentes();
+
+        DatePickerDialog.OnDateSetListener data=new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int ano, int mes, int dia) {
+                meuCalendario.set(Calendar.YEAR,ano);
+                meuCalendario.set(Calendar.MONTH,mes);
+                meuCalendario.set(Calendar.DAY_OF_MONTH,dia);
+                updateLabel();
+            }
+        };
+        et_dataDeNascimento.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new DatePickerDialog(NovoCadastro.this,data,meuCalendario.get(Calendar.YEAR),meuCalendario.get(Calendar.MONTH),meuCalendario.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
 
 
 
@@ -63,7 +85,6 @@ bt_confirmar.setOnClickListener(new View.OnClickListener() {
         String contacto=et_contacto.getText().toString();
 
 
-
         if(nome.isEmpty() ||passWord.isEmpty()|| dataDeNascimento.isEmpty() || morada.isEmpty() || email.isEmpty() || contacto.isEmpty()){
             Snackbar snackbar=Snackbar.make(v,mensagem[0],Snackbar.LENGTH_SHORT);
             snackbar.setBackgroundTint(Color.WHITE);
@@ -72,7 +93,6 @@ bt_confirmar.setOnClickListener(new View.OnClickListener() {
 
         }else{
             CadastrarUsuario(v);
-
         }
 
 
@@ -181,5 +201,10 @@ bt_confirmar.setOnClickListener(new View.OnClickListener() {
        // despose();
 
 
+    }
+    public void updateLabel(){
+        String formatoData="MM/dd/yy";
+        SimpleDateFormat dateFormat=new SimpleDateFormat(formatoData, Locale.US);
+        et_dataDeNascimento.setText(dateFormat.format((meuCalendario.getTime())));
     }
 }

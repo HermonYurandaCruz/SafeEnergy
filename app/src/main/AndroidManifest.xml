@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.codeline.safeenergy" >
+    package="com.codeline.safeenergy">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -10,16 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SafeEnergy" >
+        android:theme="@style/Theme.SafeEnergy">
+        <activity
+            android:name=".NovoContratoCliente"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperarSenha"
+            android:exported="false" />
         <activity
             android:name=".PoupeEnergia"
             android:exported="false" />
         <activity
             android:name=".ClassificacaoEquipa"
             android:exported="false" />
-        <activity
-            android:name=".Video"
-            android:exported="false" />
+
         <activity
             android:name=".MeuPerfil"
             android:exported="false" />
@@ -33,20 +37,20 @@
             android:name=".TelaReclamacao"
             android:exported="false" />
         <activity
-            android:name=".Novo_Contrato"
-            android:exported="false" />
-        <activity
             android:name=".NovoCadastro"
             android:exported="false" />
         <activity
             android:name=".TelaCategorias"
             android:exported="false" />
+        <activity android:name=".PopUp"
+            android:theme="@style/Theme.SafeEnergy.CustomTheme"
+            ></activity>
         <activity
             android:name=".Tela_Inicio"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

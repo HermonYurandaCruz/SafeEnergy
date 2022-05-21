@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 
 public class Tela_Inicio extends AppCompatActivity {
-    private TextView tv_novoCadastro;
+    private TextView tv_novoCadastro,tv_recuperarSenha;
     private EditText et_email,et_passWord;
     private Button bt_login;
     private ProgressBar progressBar;
@@ -40,6 +40,14 @@ public class Tela_Inicio extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Tela_Inicio.this,NovoCadastro.class);
+                startActivity(intent);
+            }
+        });
+
+        tv_recuperarSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Tela_Inicio.this,RecuperarSenha.class);
                 startActivity(intent);
             }
         });
@@ -129,6 +137,7 @@ public class Tela_Inicio extends AppCompatActivity {
         et_passWord=findViewById(R.id.PasswordLogin);
         bt_login=findViewById(R.id.BotaoLogin);
         progressBar=findViewById(R.id.progresse);
+        tv_recuperarSenha=findViewById(R.id.Tv_recuperarSenha);
     }
 
 }
