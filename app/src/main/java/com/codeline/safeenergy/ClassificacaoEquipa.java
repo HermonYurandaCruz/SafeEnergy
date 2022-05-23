@@ -8,15 +8,28 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class ClassificacaoEquipa extends AppCompatActivity {
 Button bt_enviarClassificacao;
-    Timer timer;
+TextView tv_testeDB;
+Timer timer;
+    private static final String URL = "jdbc:mysql://sql4.freesqldatabase.com:3306/sql4493939";
+    private static final String USER = "sql4493939";
+    private static final String SENHA = "l1C91vXETm";
+   // svm-chac-snv
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +41,12 @@ Button bt_enviarClassificacao;
         bt_enviarClassificacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ClassificacaoEquipa.this,TelaCategorias.class);
+              /*/  Intent intent=new Intent(ClassificacaoEquipa.this,TelaCategorias.class);
                 startActivity(intent);
                 finish();
+
+               */
+                TesteDb();
 
                 String mensagemNotificacao="A sua Classificacao foi enviada";
                 NotificationCompat.Builder builder=new NotificationCompat.Builder(
@@ -61,7 +77,35 @@ Button bt_enviarClassificacao;
             }
         });
     }
+
+    public void TesteDb(){
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection=DriverManager.getConnection(URL,USER,SENHA);
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("Select * from AreaDeServicoAoCliente");
+            ResultSetMetaData resultSetMetaData=resultSet.getMetaData();
+            String result="conexao com sucesso\n";
+            while (resultSet.next()){
+                result+=resultSetMetaData.getColumnName(2)+": "+resultSet.getString(2)+"\n";
+            }
+            tv_testeDB.setText(result);
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+            tv_testeDB.setText(e.toString());
+
+        }
+
+    }
+
+
     public void Inicializar(){
         bt_enviarClassificacao=findViewById(R.id.bt_enviarClassificacao);
+        tv_testeDB=findViewById(R.id.Tv_testeDB);
     }
 }

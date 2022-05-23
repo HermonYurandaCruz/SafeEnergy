@@ -16,6 +16,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -49,7 +50,7 @@ public class TelaReclamacao extends AppCompatActivity  implements  CompoundButto
       Switch swt_anonimo=(Switch) findViewById(R.id.swt_anonimo);
       swt_anonimo.setOnCheckedChangeListener(this);
 
-
+/*/
         usuarioId= FirebaseAuth.getInstance().getCurrentUser().getUid();
         DocumentReference documentReference=bancoDeDados.collection("usuario").document(usuarioId);
         documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
@@ -65,18 +66,20 @@ public class TelaReclamacao extends AppCompatActivity  implements  CompoundButto
             }
         });
 
+ */
+
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String textoReclamacao = et_reclamacao.getText().toString();
 
-                if (textoReclamacao.isEmpty()) {
-                    Snackbar snackbar = Snackbar.make(view, messagem, Snackbar.LENGTH_SHORT);
-                    snackbar.setBackgroundTint(Color.WHITE);
-                    snackbar.setTextColor(Color.BLACK);
-                    snackbar.show();
+                if (textoReclamacao.length()==0) {
+                    Toast.makeText(getApplication(),"Os campos estao vazios",Toast.LENGTH_LONG).show();
+
                 }else{
-                    String localizacao=et_localizacao.getText().toString();
+                    Toast.makeText(getApplication(),"Reclamacao enviada com sucesso",Toast.LENGTH_LONG).show();
+
+                    /*/String localizacao=et_localizacao.getText().toString();
                     mensagemReclamacao="Nome:"+nome+"\n"+"Contacto:"+numeroDecelular+"\n"+"Reclamação:"+textoReclamacao+"\n"+"Localizacao:"+localizacao;
 
 
@@ -106,6 +109,8 @@ public class TelaReclamacao extends AppCompatActivity  implements  CompoundButto
 
                         }
                     },5000);
+
+                     */
                 }
             }
         });

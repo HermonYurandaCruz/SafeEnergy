@@ -21,10 +21,10 @@ Timer timer;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                //Intent intent=new Intent(MainActivity.this,Tela_Inicio.class);
+                Intent intent=new Intent(MainActivity.this,Tela_Inicio.class);
 
                // activar para afectuar testes sem login
-               Intent intent=new Intent(MainActivity.this,TelaCategorias.class);
+                //  Intent intent=new Intent(MainActivity.this,TelaCategorias.class);
 
                 startActivity(intent);
                 finish();

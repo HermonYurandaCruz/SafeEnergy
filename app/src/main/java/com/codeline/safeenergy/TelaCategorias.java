@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class TelaCategorias extends AppCompatActivity {
     TextView tv_PouparEnergia;
-    ImageView imagemView;
+    ImageView imagemView,iv_notificacao;
     String url = "https://drive.google.com/file/d/1z4_MKyIFwE7TYakC5m56mMUrAd0imjG-/view?usp=sharing";
 
     @Override
@@ -21,6 +21,15 @@ public class TelaCategorias extends AppCompatActivity {
         getSupportActionBar().hide();
 
         IniciarImagemView();
+
+        iv_notificacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(TelaCategorias.this,ListaNotificacao.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         imagemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +54,7 @@ public class TelaCategorias extends AppCompatActivity {
     private void IniciarImagemView() {
         imagemView=findViewById(R.id.Iv_perfil);
         tv_PouparEnergia=findViewById(R.id.tv_PouparEnergia);
+        iv_notificacao=findViewById(R.id.Iv_notificacao);
     }
 
     public void AbrirNovoContrato(View view){

@@ -2,6 +2,7 @@
     <string name="app_name">Safe Energy</string>
     <string name="novo_cadastro">Novo Cadastro...</string>
     <string name="Nome">Nome:</string>
+    <string name="equipe">Equipes de Manutenção</string>
     <string-array name="arraySexo">
         <item>Masculino</item>
         <item>Feminino</item>
