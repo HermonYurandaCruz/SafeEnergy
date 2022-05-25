@@ -13,9 +13,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//
+//import java.sql.ResultSet;
+//import java.sql.ResultSetMetaData;
+//import java.sql.Statement;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
@@ -82,16 +89,30 @@ Timer timer;
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
-
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection=DriverManager.getConnection(URL,USER,SENHA);
-            Statement statement=connection.createStatement();
-            ResultSet resultSet=statement.executeQuery("Select * from AreaDeServicoAoCliente");
-            ResultSetMetaData resultSetMetaData=resultSet.getMetaData();
-            String result="conexao com sucesso\n";
-            while (resultSet.next()){
-                result+=resultSetMetaData.getColumnName(2)+": "+resultSet.getString(2)+"\n";
-            }
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(URL, USER, SENHA);
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into reclamacao (nomeDoCliente, mensagem, anonimo) value (?, ? , ?)");
+            preparedStatement.setString(1, "Hermon");
+            preparedStatement.setString(2, "Estou com problemas de corrente eléctrica há 5 dias");
+            preparedStatement.setBoolean(3, false);
+            preparedStatement.execute();
+            //ResultSet resultSet = statement.executeQuery("Select * from AreaDeServicoAoCliente");
+            //ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+//            Statement st = connection.createStatement();
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+            //Connection connection=DriverManager.getConnection(URL,USER,SENHA);
+//            Connection con = DriverManager.getConnection(URL, USER, SENHA);
+//            Statement statement=connection.createStatement();
+//            ResultSet resultSet=statement.executeQuery("Select * from AreaDeServicoAoCliente");
+//            ResultSetMetaData resultSetMetaData=resultSet.getMetaData();
+//            String result = "Sem conexao";
+//            if(connection != null) {
+            String result = "Enviado com sucesso";/* = "conexao com sucesso";*/
+////                result = "conexao com sucesso";
+//            }
+//            while (resultSet.next()){
+//                result+=resultSetMetaData.getColumnName(4)+": "+resultSet.getString(4)+"\n";
+//            }
             tv_testeDB.setText(result);
 
 
